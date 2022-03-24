@@ -5,7 +5,7 @@ app.use(express.static("public"));
 app.listen(process.env.PORT || 3050,(req,res)=>{
     console.log("Servidor corriendo");
 })
-app.get("/home",(req,res)=>{
+app.get("/",(req,res)=>{
     res.sendFile(path.join(__dirname,"/views/home.html"))
 })
 app.get("/register",(req,res)=>{
