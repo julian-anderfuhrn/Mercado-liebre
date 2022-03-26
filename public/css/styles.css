@@ -46,6 +46,7 @@ footer div i {
 }
 article {
     margin-bottom: 1rem;
+    transition: 200ms;
 }
 
 /* tamaños principales - posicionamientos principales*/
@@ -57,7 +58,6 @@ header {
 }
 .banner {
     width: 100vw;
-    
 }
 .main-container {
     width: 90vw;
@@ -81,6 +81,7 @@ li i  {
     text-align: center;
     padding-bottom: 0.5rem;
     padding-top: 0.5rem;
+    justify-self: center;
 }
 .search {
     display: block;
@@ -97,6 +98,7 @@ li i  {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
+    justify-content: center;
 }
 /* colores principales*/
 header {
@@ -109,6 +111,7 @@ header {
  li a {
     color: #666;
     text-decoration: none;
+    transition: 100ms;
 }
 main, footer {
     background-color: #ebebeb;
@@ -125,7 +128,7 @@ main, footer {
     justify-content: center;
     align-items: center;
     color: #ebebeb;
-    margin-top: 2.3rem;
+    margin-top: 3rem;
 }
 article div i{
     font-size: 1.6rem;
@@ -158,7 +161,10 @@ article:hover .descripcion {
     visibility: visible;
 }
 article:hover i {
-    transform: rotate(270deg);
+    transform: rotate(-90deg);
+}
+a:hover {
+    color: #ebebeb;
 }
 
 
@@ -221,5 +227,11 @@ article:hover i {
     }
     html {
         font-size: 75%;
+    }
+    .logo {
+        width: 60rem;
+    }
+    .cuotas {
+        margin-left: 1rem;
     }
 }
